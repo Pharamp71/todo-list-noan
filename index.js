@@ -36,7 +36,7 @@ app.get("/ajouter", (req, rep) => {
 
 // route qui recoit les données du formulaire
 app.post("/ajouter", (req, rep) => {
-    
+
    // console.log(req.body)
   await supabase.from('todo').insert(req.body)
 })
